@@ -1,14 +1,14 @@
 project "GLFW"
      kind "StaticLib"
      language "C"
-     targetdir (GLFW .. bin .. "/%{cfg.buildcfg}/")
+     targetdir ("GLFW/bin/%{cfg.buildcfg}/")
      systemversion "latest"
      staticruntime "On"
 
      files
 	   {
-  		 ("%{wks.location}" .. ENGINE .. "/vendor/GLFW/glfw3.h"),
-	  	 ("%{wks.location}" .. ENGINE .. "/vendor/GLFW/glfw3native.h")
+  		 ("%{wks.location}Engine/vendor/GLFW/glfw3.h"),
+	  	 ("%{wks.location}Engine/vendor/GLFW/glfw3native.h")
      }
 
      filter "configurations:Debug"
