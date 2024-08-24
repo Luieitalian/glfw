@@ -48,7 +48,9 @@ project "GLFW"
     filter "configurations:Debug"
         defines { "DEBUG" }
         symbols "On"
-
+        runtime "Debug"
+        
     filter "configurations:Release"
         defines { "NDEBUG" }
         optimize "On"
+        runtime "Release"
